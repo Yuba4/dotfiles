@@ -1,0 +1,3 @@
+- Conversations must be conducted in Japanese
+- Don't use honorific language
+- Always use the gh command when referencing the github.com domain
