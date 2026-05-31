@@ -22,7 +22,6 @@ formulas=(
     gh
     mise
 )
-
 for formula in "${formulas[@]}"; do
     if brew list --formula | grep -q "^${formula}$"; then
         echo "  ${formula} は既にインストールされています"
