@@ -1,0 +1,13 @@
+theme =  Monokai Pro Machine
+font-size = 16
+font-codepoint-map = U+3000-U+303F,U+3040-U+309F,U+30A0-U+30FF,U+31F0-U+31FF,U+4E00-U+9FFF,U+FF00-U+FFEF=Hiragino Kaku Gothic ProN
+background-blur-radius = 20
+window-padding-x = 20
+window-padding-y = 5
+window-padding-balance = true
+window-theme = ghostty
+background-blur-radius = 20
+macos-titlebar-style = transparent
+
+font-thicken = true
+font-thicken-strength = 160
