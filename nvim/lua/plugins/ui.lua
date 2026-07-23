@@ -36,13 +36,8 @@ require('which-key').setup {
   },
 }
 
--- [[ Colorscheme ]]
--- Matches the "Monokai Pro Machine" theme used in Ghostty (see ../../ghostty/config).
-vim.pack.add { gh 'loctvl842/monokai-pro.nvim' }
-require('monokai-pro').setup {
-  filter = 'machine',
-}
-vim.cmd.colorscheme 'monokai-pro'
+vim.pack.add { gh 'projekt0n/github-nvim-theme' }
+vim.cmd.colorscheme 'github_dark_dimmed'
 
 -- Highlight todo, notes, etc in comments
 vim.pack.add { gh 'folke/todo-comments.nvim' }
