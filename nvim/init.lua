@@ -270,6 +270,7 @@ require 'plugins.lazygit' -- lazygit.nvim (floating LazyGit terminal)
 require 'plugins.codediff'
 require 'plugins.snacks' -- snacks.nvim (QoL; provides claudecode terminal provider)
 require 'plugins.claudecode' -- claudecode.nvim (Claude Code IDE integration)
+require 'plugins.codex' -- codex.nvim (OpenAI Codex side panel)
 
 -- Optional examples bundled with kickstart.nvim.
 -- Uncomment/comment any of the lines below to enable/disable them.
