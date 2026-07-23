@@ -79,15 +79,15 @@ vim.api.nvim_create_autocmd('LspAttach', {
 ---@type table<string, vim.lsp.Config>
 local servers = {
   -- clangd = {},
-  -- gopls = {},
+  gopls = {},
   -- pyright = {},
   -- rust_analyzer = {},
   --
   -- Some languages (like typescript) have entire language plugins that can be useful:
   --    https://github.com/pmizio/typescript-tools.nvim
   --
-  -- But for many setups, the LSP (`ts_ls`) will work just fine
-  -- ts_ls = {},
+  -- vtsls (mason経由で導入済み) の方が ts_ls より更新が活発なため採用
+  vtsls = {},
 
   stylua = {}, -- Used to format Lua code
 
