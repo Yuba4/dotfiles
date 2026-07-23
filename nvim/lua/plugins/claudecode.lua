@@ -8,7 +8,9 @@ local gh = require('util').gh
 
 vim.pack.add { gh 'coder/claudecode.nvim' }
 
-require('claudecode').setup()
+require('claudecode').setup {
+  diff_opts = { keep_terminal_focus = true },
+}
 
 vim.keymap.set('n', '<leader>ac', '<cmd>ClaudeCode<cr>', { desc = 'Toggle Claude' })
 vim.keymap.set('n', '<leader>af', '<cmd>ClaudeCodeFocus<cr>', { desc = 'Focus Claude' })
