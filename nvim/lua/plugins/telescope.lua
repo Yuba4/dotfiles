@@ -29,6 +29,11 @@ vim.pack.add(telescope_plugins)
 
 -- See `:help telescope` and `:help telescope.setup()`
 require('telescope').setup {
+  pickers = {
+    find_files = { hidden = true },
+    grep_string = { hidden = true },
+    live_grep = { hidden = true },
+  },
   extensions = {
     ['ui-select'] = { require('telescope.themes').get_dropdown() },
   },
@@ -100,4 +105,4 @@ vim.keymap.set(
 )
 
 -- Shortcut for searching your Neovim configuration files
-vim.keymap.set('n', '<leader>sn', function() builtin.find_files { cwd = vim.fn.stdpath 'config', follow = true } end, { desc = '[S]earch [N]eovim files' })
+vim.keymap.set('n', '<leader>sn', function() builtin.find_files { cwd = vim.fn.stdpath 'config', follow = true, hidden = true } end, { desc = '[S]earch [N]eovim files' })
