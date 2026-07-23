@@ -267,6 +267,7 @@ require 'plugins.formatting' -- conform.nvim
 require 'plugins.completion' -- LuaSnip + blink.cmp
 require 'plugins.treesitter' -- parser installation, highlighting, folds, indentation
 require 'plugins.lazygit' -- lazygit.nvim (floating LazyGit terminal)
+require 'plugins.codediff'
 require 'plugins.claudecode' -- claudecode.nvim (Claude Code IDE integration)
 
 -- Optional examples bundled with kickstart.nvim.
