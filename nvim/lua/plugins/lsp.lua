@@ -36,6 +36,11 @@ vim.api.nvim_create_autocmd('LspAttach', {
     -- WARN: This is not Goto Definition, this is Goto Declaration.
     map('grD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
 
+    -- Neovim 0.12 has no builtin default keymap for goto-definition (only
+    -- grn/gra/grr/gri/grt/gO), so `gd` falls back to Vim's non-LSP local
+    -- declaration search unless mapped explicitly here.
+    map('gd', vim.lsp.buf.definition, '[G]oto [D]efinition')
+
     -- Highlight references of the word under your cursor when your cursor rests there.
     local client = vim.lsp.get_client_by_id(event.data.client_id)
     if client and client:supports_method('textDocument/documentHighlight', event.buf) then
