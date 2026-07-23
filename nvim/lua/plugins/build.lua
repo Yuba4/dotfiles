@@ -42,6 +42,15 @@ vim.api.nvim_create_autocmd('PackChanged', {
       return
     end
 
+    if name == 'markdown-preview.nvim' then
+      if not ev.data.active then vim.cmd.packadd 'markdown-preview.nvim' end
+
+      local ok, err = pcall(vim.fn['mkdp#util#install'])
+      if not ok then vim.notify(('Build failed for %s:\n%s'):format(name, err), vim.log.levels.ERROR) end
+
+      return
+    end
+
     if name == 'nvim-treesitter' then
       if not ev.data.active then vim.cmd.packadd 'nvim-treesitter' end
       vim.cmd 'TSUpdate'
