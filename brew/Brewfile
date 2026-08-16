@@ -22,6 +22,7 @@ brew "neovim"
 brew "nvm"
 brew "pnpm"
 brew "tfenv"
+brew "tree-sitter-cli"
 brew "wget"
 brew "microsoft/apm/apm", trusted: true
 cask "1password"
