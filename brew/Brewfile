@@ -1,6 +1,8 @@
 tap "atlassian/acli", "https://github.com/atlassian/homebrew-acli.git"
 tap "steipete/tap"
+brew "crit"
 brew "googleworkspace-cli"
+brew "lazysql"
 brew "libyaml"
 brew "wget"
 cask "1password"
