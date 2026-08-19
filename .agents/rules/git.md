@@ -6,6 +6,7 @@
   - OK: `CSVエクスポートのタイムアウトを修正`
 - Before writing a PR description, look for a PR template (`.github/pull_request_template.md`, `.github/PULL_REQUEST_TEMPLATE.md`, or files under `.github/PULL_REQUEST_TEMPLATE/`). If one exists, follow it: keep its headings and order, and fill every section. Leave a section out only when it clearly does not apply, and note why in one line instead of leaving it blank. Keep template checklists and comment placeholders intact.
 - If there is no template, write a short description covering what changed and why.
+- Write PR descriptions in simple, easy-to-understand bullet points. Prefer short bullets over long prose paragraphs, and keep each bullet to one fact.
 - Do not add AI signatures such as "🤖 Generated with Claude Code" or "Co-Authored-By: Claude" to PR descriptions or commit messages.
 - Keep commits granular: do not cram multiple files or unrelated changes into a single commit. Split by feature, bug fix, or refactor.
 - Keep commit messages to a single concise line. No hard character limit. No body, no bullet list, unless the user explicitly asks for details.
